@@ -2,9 +2,6 @@ cmake_minimum_required(VERSION 2.8.11)
 
 project(lxqt-theme-green)
 
-find_package(lxqt REQUIRED)
-include(${LXQT_USE_FILE})
-
 install(DIRECTORY Green DESTINATION share/lxqt/themes PATTERN "CMake*" EXCLUDE PATTERN "cmake*" EXCLUDE PATTERN "Makefile" EXCLUDE)
 
 # building tarball with CPack -------------------------------------------------
